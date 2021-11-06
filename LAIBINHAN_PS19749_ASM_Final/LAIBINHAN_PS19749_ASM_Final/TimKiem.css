@@ -1,0 +1,179 @@
+.container
+{
+    width: 90%; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container header
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container .header-info
+{
+    width: 87%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    background-color: rgba(228, 226, 226, 0.801);
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    height: 40px;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.container .header-info input
+{
+    height: 20px;
+    margin: 7px;
+}
+.header-info>li>a
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+}
+
+.header-info>li>a:hover
+{
+    color:red;
+    font-weight: bold;
+}
+.header-info>li
+{
+    float: left;
+    margin: 0px;
+    position: relative;
+}
+.header-info>li:hover>.submenu
+{
+    display: block;
+}
+.submenu
+{
+    width: 130px;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid gray;
+    list-style: none;
+    box-shadow: 0 0 5px gray;
+    background-color: rgb(228, 226, 226);
+}
+.submenu>li>a
+{
+    display: block;
+    color: black;
+    font-size: 17px;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+.submenu>li>a:hover
+{
+    color: red;
+    font-weight: bold;
+}
+.container header img
+{
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+}
+.container .list-course
+{
+    width: 95%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: snow;
+}
+.container .list-course .course
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.container .list-course .check
+{
+    background-color: bisque;
+    padding-bottom: 30px;
+}
+.container .list-course .check .don 
+{
+    padding-left: 520px;
+}
+.container .list-course .check .don h5
+{
+    font-size: 20px;
+}
+.container .list-course .course .content
+{
+    width: 34%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+}
+.container .list-course .course img
+{
+    width: 100%;
+}
+.container footer 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(228, 226, 226);
+    margin-top: 20px;
+}
+.container footer .information
+{
+    line-height: 25px;
+    width: 100%;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.container footer .information .lienhe
+{
+    width: 50%;
+}
+.container footer .information .lienhe p
+{
+    margin: 0px;
+    font-weight: bold;
+}
+
+.container footer .license
+{
+    border-top: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+

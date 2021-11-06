@@ -1,0 +1,887 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 100%;
+
+}
+
+/*----------------menu mobile------------------*/
+
+.nav .menu-mobile .nav-input {
+    display: none;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .overlay {
+    display: block;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .nav-menu-mobile {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.nav .menu-mobile  #bars{
+    padding: 3px 12px;
+    padding-top: 7px;
+    font-size: 35px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2343A0;
+    position: fixed;
+    z-index: 5;
+    top: 5%;
+    right: 6%;
+    cursor: pointer;
+}
+.nav .menu-mobile .overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+.nav .menu-mobile .nav-menu-mobile {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+    transform: translate(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav .menu-mobile .nav-menu-mobile .nav-close {
+    font-size: 2rem;
+    margin-top: 3%;
+    position: absolute;
+    color: #666;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li {
+    list-style: none;
+    padding: 10px;
+    padding-left: 5%;
+
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li:hover {
+    background-color: #6ECB63;
+    transition: 0.35s;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li #home {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a i {
+    color: black;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon {
+    position: fixed;
+    top: 59px;
+    right: 11%;
+    font-size: 1.5rem;
+    background-color: unset;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon:focus ~ .search-input {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input {
+    width: 67%;
+    margin-left: 7.5%;
+    line-height: 35px;
+    border-radius: 5px;
+    padding-left: 4%;
+    padding-right: 13%;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus {
+    border: 2px solid black;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus ~ .history {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history {
+    background-color: rgb(155, 153, 153,0.85);
+    width: 81%;
+    margin-left: 9%;
+    border-radius: 5px;
+    margin-top: 1%;
+    display: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history{
+    min-height: 10vh;  
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history h4{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid white;
+    opacity: 0.7;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul{
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul li {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul a {
+    opacity: 0.7;
+    padding-left: 6%;
+    font-size: 1.5em;
+}
+
+/* hien thi tren may tinh bang */
+
+@media only screen and (max-width: 1160px) {
+
+    main .content-main .item .ND p {
+        display: none;
+    }
+
+    main .content-main .item .ND h3 {
+        display: none;
+    }
+
+    main .mail .gui-mail form div {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    main .mail .gui-mail .mail-sdt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .mail .gui-mail .mail-sdt .gmail input {
+        width: 206%;
+    }
+
+    main .mail .gui-mail .mail-sdt .sdt input {
+        width: 206%;
+    }
+
+    main #thong-tin-lien-he .lien-he1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main #thong-tin-lien-he .lien-he1 .tru-so {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    main #thong-tin-lien-he .lien-he1 .ho-tro {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .content-footer .face{
+        display: none; 
+    }
+
+    footer .content-footer .logo-footer {
+        display: none;
+    }   
+
+    footer .content-footer  .doan1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1.3;
+    }
+    
+}
+
+/* hien thi tren dien thoai */
+@media only screen and (max-width: 750px) {
+    main .content .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .menu-footer .nav-footer {
+        display: none;
+    }
+}  
+
+/* @media only screen and (max-width: 46.1875em) { 
+    main .content-PC {
+        display: none;
+    }
+    main .content-750 {
+        display: block;
+    }
+} */
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*-------------------main--------------------*/
+
+main {
+    width: 90%;
+    min-width: 90%;
+    min-height: 600px;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+main > h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    font-size: 3rem;
+}
+main .content-main {
+    display: flex;
+    margin-right: 19%;
+    margin-bottom: 5%;
+}
+
+main .content-main a {
+    text-decoration: none;
+    color: black;
+}
+
+main .content-main .item {
+    width: 70%;
+    margin-right: 10%;
+}
+
+main .content-main .item .ND {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    height: 100%;
+    padding: 10%;
+    line-height: 3.5vh;
+    font-size: 1.3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(241, 239, 239);
+    border-radius: 5%;
+    position: relative;
+    cursor: pointer;
+}
+
+main .content-main .item .ND .down {
+    position: absolute;
+    bottom: 10%;
+    display: none;
+}
+
+main .content-main .item .ND .icon {
+    margin-bottom: 5%;
+    font-size: 2.5em;
+    color: #2343A0;
+}
+
+main .content-main .item .ND:hover, main .content-main .item .ND:focus {
+    box-shadow: 0 0 20px gray;
+    transition: 0.3s;
+} 
+
+main .content-main .item .ND:hover .down { 
+    display: block;
+    transition: 0.3s;
+}
+
+main .content-main .item .ND:hover h3 {
+    color: #2343A0;
+    transition: 0.3s;
+}
+
+/*----------- thong tin lien he -----------*/
+
+main #thong-tin-lien-he {
+    width: 80%;
+    margin-top: 7%;
+    display: none;
+    margin-bottom: 10%;
+}
+
+main #thong-tin-lien-he .lien-he1 {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+}
+
+main #thong-tin-lien-he .tru-so {
+    margin-right: 5%;
+    width: 60%;
+}
+
+main #thong-tin-lien-he .tru-so h3 {
+    margin-bottom: 2%;
+}
+
+main #thong-tin-lien-he img {
+    width: 100%;
+    height: 28vh;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #thong-tin-lien-he .ho-tro {
+    width: 60%;
+}
+
+main #thong-tin-lien-he .ho-tro > h3,h6 {
+    margin-bottom: 1%;
+}
+
+main #thong-tin-lien-he .ho-tro > h3 {
+    margin-bottom: 4%;  
+}
+
+main #thong-tin-lien-he .ho-tro > h6 {
+    margin-bottom: 3%; 
+    font-size: 0.8em; 
+}
+
+main #thong-tin-lien-he .ho-tro ul li {
+    list-style: none;
+    display: block;
+    margin-bottom: 0.5%;
+}
+
+main #thong-tin-lien-he .ho-tro ul li a {
+    text-decoration: none;   
+}
+
+/*---------------- mail ----------------*/
+
+main .mail {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 100%;
+    display: none;
+}
+
+main .mail .gui-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .mail .gui-mail h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+main .mail .gui-mail form {
+    margin-left: 15%;
+    width: 70%;
+}
+
+main .mail .gui-mail input {
+    border: 1px solid black;
+    line-height: 2.7em;
+    border-radius: 7px;
+}
+
+main .mail .gui-mail .username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+main .mail .gui-mail .username > input {
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+main .mail .gui-mail .mail-sdt {
+    display: flex;
+    width: 100%;
+}
+
+main .mail .gui-mail .mail-sdt input {
+    padding-left: 4%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+main .mail .gui-mail .mail-sdt .gmail {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    margin-right: 4%;
+}
+
+main .mail .gui-mail .mail-sdt .sdt {
+    display: flex;
+    flex-direction: column; 
+    width: 39%;
+}
+
+main .mail .gui-mail .tieu-de-mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 82%;
+}
+
+main .mail .gui-mail .tieu-de-mail input {
+    padding-left: 2%;
+    font-size: 1em;
+    margin-top: 1%;
+    
+}
+
+main .mail .gui-mail .ND-mail {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-bottom: 3%;
+}
+
+main .mail .gui-mail .ND-mail textarea {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 1.3em;
+}
+
+main .mail .gui-mail hr {
+    width: 82%;
+    margin-bottom: 3%;
+}
+
+main .mail .gui-mail .gui-di {
+    width: 20%;
+    margin-left: 30%;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+main .mail .gui-mail .gui-di:hover, 
+main .mail .gui-mail .gui-di:focus  {
+    background-color: #2343A0;
+    color: snow;
+}
+
+/*------------- feed back -------------*/
+
+main .feedback {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 4%;
+    width: 100%;
+    display: none;
+}
+
+main .feedback > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .feedback h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-left: 1%;
+    margin-bottom: 4%;
+}
+
+main .feedback form {
+    margin-left: 15%;
+    width: 70%;
+}
+
+main .feedback input {
+    border: 1px solid black;
+    line-height: 2.7em;
+    border-radius: 7px;
+}
+
+main .feedback .username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+main .feedback .username > input {
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+main .feedback .gmail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+main .feedback .gmail > input {
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 1%;
+    font-size: 1em;
+}
+
+main .feedback .ND-y-kien {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-bottom: 3%;
+}
+
+main .feedback .ND-y-kien textarea {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 1.3em;
+}
+
+main .feedback hr {
+    width: 82%;
+    margin-bottom: 3%;
+}
+
+main .feedback .gui-di {
+    width: 20%;
+    margin-left: 30%;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+main .feedback .gui-di:hover, 
+main .feedback .gui-di:focus  {
+    background-color: #2343A0;
+    color: snow;
+}
+/*------------------end main-------------------*/
+
+/* -----------------back to top--------------- */
+
+.container .back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 1.2%;
+    bottom: 5%;
+    font-size: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #92c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    z-index: 4;
+}
+
+.container .back-to-top:hover, .container .back-to-top:focus {
+    background-color: #4B6587;
+    color: snow;
+}
+
+/*------------------footer-------------------- */
+footer {
+    min-width: 100%;
+    min-height: 300px;
+    margin-top: 40px;
+    background-color: #6E6E6E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------------------thanh nav---------------*/
+.menu-footer { 
+    display: flex;
+    position: relative;
+    background-color: black; 
+    min-width: 100%;
+    min-height: 50px;
+}
+
+.menu-footer .nav-footer {
+    margin-left: 10%;
+    line-height: 50px;
+}
+
+.menu-footer .nav-footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-footer .nav-footer ul li {
+    list-style: none;
+    position: relative;
+}
+
+.menu-footer .nav-footer ul li a {
+    line-height: 50px;
+    margin-right: 11px;
+    margin-left: 11px;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: rgb(234, 240, 247);
+    vertical-align: center;
+    text-decoration: none;
+}
+/*--------------end nav footer cha------------- */
+
+/*--------------nav footer con------------------*/
+
+.menu-footer .nav-footer ul li:hover {
+    background-color: #d6142e;
+    transition: 0.35s;
+}
+
+.menu-footer .nav-footer ul li:hover .sub-menu {
+    display: block;
+}
+
+.menu-footer .nav-footer ul li .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 300px;
+    background-color: rgb(126, 33, 33);
+}
+
+.menu-footer .nav-footer ul li .sub-menu li {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.menu-footer .nav-footer ul li .sub-menu li a {
+    margin: auto;
+    list-style: none;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+}
+/*----------------end nav footer--------------- */
+
+/*----------------content footer--------------- */
+
+.content-footer {
+    display: flex;
+}
+
+.content-footer a {
+    flex: 1;
+}
+
+.content-footer a img {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 30px;
+    margin-top: 5%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content-footer .ND {
+    margin-top: 30px;
+    color: #D8D8D8;
+    flex: 1;
+}
+
+.content-footer .ND h3{
+    padding-bottom: 3px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #2E2E2E;
+}
+
+.content-footer .ND ul li {
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+.content-footer .ND ul li a {
+    text-decoration: none;
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.content-footer .ND ul li a i {
+    color: #F8F0DF;
+}
+
+.content-footer .doan1 {
+    line-height: 19px;
+}
+
+.content-footer .doan2 {
+    line-height: 19px;
+}
+
+.content-footer .face {
+    flex: 1.5;
+    margin-top: 30px; 
+    position: relative;
+}
+
+.content-footer .face h3 {
+    padding-bottom: 3px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #2E2E2E;
+}
+
+.content-footer .face img {
+    max-width: 50%;
+    max-height: 73%;
+    position: absolute;
+    
+}
+
+.content-footer .face a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 10px;
+}
+
+.content-footer .face a i {
+    font-size: 40px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.content-footer .face a span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Copyright {
+    min-height: 35px;
+    line-height: 35px;
+    margin-top: 40px;
+    padding-right: 9%;
+    color: white;
+    text-align: center;
+}
+/*-------------end content footer------------- */

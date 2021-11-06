@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Club Bayern Munich</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="./asset/icon/android-icon-72x72.png"/>
+<link rel="stylesheet" href="./asset/css/syter.css">
+<link rel="stylesheet" href="./asset/css/responsive.css">
+<link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+<body>
+    <div id="main">
+        <div id="header">
+            <!--begin nav-->
+            <ul id="nav">
+                <li><a href="./diendan.html">Home</a></li>
+                <li><a href="https://huylee890.blogspot.com">Blog</a></li>
+                <li><a href="./dangnhap.html">ĐĂNG NHẬP</a></li>
+                <li><a href="./trangchu.html">Huy-Shop</a></li>
+                <li>
+                    <a href="#">
+                        Danh Mục
+                        <i class="nav-icon ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="./tiendao.html">Tiền Đạo</a></li>
+                        <li><a href="./thumon.html">Thủ Môn</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--end nav-->
+            <!--begin search-->
+            <div class="search-button">
+                <i class="search-icon ti-search"></i>
+            </div> 
+            
+            <div id="menu-mobile" class="menu-button">
+                <i class="menu-icon ti-menu-alt"></i>
+            </div>
+            <!--end search-->
+
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://sportoport.com/content/images/wordpress/2020/09/EivmFfAX0AAIRU1-scaled.jpg" style="width:100%" height="600">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://i2-prod.mirror.co.uk/incoming/article5748482.ece/ALTERNATES/s1227b/Bayern-Munich-Bundesliga-Champions.jpg" style="width:100%" height="600">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://images.news18.com/ibnlive/uploads/2020/08/1598218770_bayern-munich.png" style="width:100%" height="600">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+        <div id="container">
+            <div class="content-1">
+                <h2 class="con-heading">CLUB Bayern Munich</h2>
+                <p class="con-sub-heading">Der Rekordmeister</p>
+                <p class="about-text">
+                    Xuyên suốt chiều dài lịch sử của đội bóng số một nước Đức – Bayern Munich đã giành được vô số danh hiệu cao quý. Đội chủ sân Allianz Arena giữ kỷ lục vô địch Bundesliga khi đã nâng cao danh hiệu vô địch tới 31 lần và 6 vô địch Champions League. Chuỗi kỷ lục vô địch kéo dài từ mùa giải 2012-2013 đến mùa giải 2020-201 là một kỷ lục vẫn chưa có dấu hiệu dừng lại của Hùm xám.
+                </p>
+                <div class="member-list">
+                    <div class="member-item member-a">
+                        <p class="member-name">Joshua Walter Kimmich</p>
+                        <img src="https://kickwelt.de/wp-content/uploads/2020/02/620207c1fd33d1679d7b472966c8f5c5bcad2c66.jpg"  alt="kimmich" class="member-img">
+                    </div>
+
+                    <div class="member-item member-a">
+                        <p class="member-name">Robert Lewandowski</p>
+                        <img src="https://bilder3.n-tv.de/img/incoming/origs15990046/9672535957-w1280-h960/imago21177799h.jpg"  alt="Lewandowski" class="member-img">
+                    </div>
+
+                    <div class="member-item member-a">
+                        <p class="member-name">Thomas Müller</p>
+                        <img src="https://i.pinimg.com/originals/5d/75/cd/5d75cd27d86ed4da6f0932efcfc9a1ce.jpg"  alt="Müller" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="tour-1">
+                <div class="content-1">
+                <h2 class="con-heading text-white">MUA VÉ</h2>
+                <p class="con-sub-heading text-white">Mua vé tại đây</p>
+
+                <ul class="menu-tour">
+                    <li>Bundesliga(Germany) <span class="sold-out">sold-out</span></li>
+                    <li>Champions League(Europe) <span class="quantity">1500</span></li>
+                    <li>DFL-Supercup(Germany) <span class="quantity">3500</span></li>
+                </ul>
+
+                <div class="palaces-list">
+                    <div class="palaces-item s-full">
+                        <img src="https://i.pinimg.com/736x/ac/6d/8a/ac6d8a5328659e006683642efa879e8e.jpg" alt="Bundesliga" class="places-img">
+                        <div class="places-body">
+                            <h3 class="places-heading">Germany</h3>
+                            <p class="palaces-time">26 September 2021</p>
+                            <p class="places-desc">is a professional association football league in Germany</p>
+                            <button  class="places-bottom js-buy-ticket">Mua vé</button>
+                        </div>
+                    </div>
+                    <div class="palaces-item s-full">
+                        <img src="https://thebetjournal.com/wp-content/uploads/2021/09/Champions-League.jpg" alt="Champions League" class="places-img">
+                        <div class="places-body">
+                            <h3 class="places-heading">Champions League</h3>
+                            <p class="palaces-time">15 September 2021</p>
+                            <p class="places-desc">It is a football tournament organized by the European Football Association</p>
+                            <button  class="places-bottom js-buy-ticket">Mua vé</button>
+                        </div>
+                    </div>
+                    <div class="palaces-item s-full">
+                        <img src="https://th.bing.com/th/id/OIP._t1lR1awfDnQF_AcJTd4jwHaE7?pid=ImgDet&rs=1" alt="DFL-Supercup" class="places-img">
+                        <div class="places-body">
+                            <h3 class="places-heading">DFL-Supercup</h3>
+                            <p class="palaces-time">17 August 2021</p>
+                            <p class="places-desc">or German Super Cup is a one-off football match in Germany</p>
+                            <button class="places-bottom js-buy-ticket">Mua Vé</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+                </div>
+            </div>
+            <div class="content-video">
+                <div class="content-1">
+                <h2 class="con-heading text-white">VIDEO</h2>
+                <p class="con-sub-heading text-white">FC BAYERN MUNICH</p>
+
+                <div class="palaces-item s-full">
+                    <div class="places-body">
+                        <h3 class="places-heading">HIGH-LIGHTS FC Bayern Munich</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl41m9zQAqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XG20pmQPyHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4C4p-rkReZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                    </div>
+                </div>
+
+                <div class="palaces-item s-full">
+                    <div class="places-body">
+                        <h3 class="places-heading">cầu thủ huyền thoại FC Bayern Munich</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7GpcsezbgRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LWhrApQYEPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_SpGY_EhHNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                    </div>
+                </div>
+
+                <div class="palaces-item s-full">
+                    <div class="places-body">
+                        <h3 class="places-heading">Câu chuyện bên lề FC Bayern Munich</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KdpbvNcpvvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ6GgEU0uSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gX6f4BAl8-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+        </div>        
+        </div>
+
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>FC Bayern Munich<span>logo</span></h3>
+                <img src="https://weneedfun.com/wp-content/uploads/2016/11/Bayern-Munich-Logo-1.jpg" width="50%" height="25%" alt="logo">
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="https://huylee890.blogspot.com">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+				</p>
+
+				<p class="footer-company-name">Fc Bayern Munich</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="ti-location-pin"></i>
+					<p><span>Trung Mỹ Tây</span> Quận 12, TP.Hồ Chí Minh</p>
+				</div>
+
+				<div>
+					<i class="ti-mobile"></i>
+					<p>+phone: 0975.346.827</p>
+				</div>
+
+				<div>
+					<i class="ti-email"></i>
+					<p><a href="https://mail.google.com/">huymat890@gmail.com</a></p>
+				</div>
+
+                <div id="map" style="width:300px;height:300px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.588627679401!2d106.62155301382305!3d10.842760060933013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a2951327661%3A0x1f5141bf81ec6c28!2sAn%20Suong%20Park!5e0!3m2!1svi!2s!4v1632900193715!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                 </div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the FC Bayern Munich</span>
+					thường được biết đến với tên gọi FC Bayern München, FCB, Bayern Munich, hoặc FC Bayern, là một câu lạc bộ thể thao có trụ sở tại München, Đức. Câu lạc bộ này được biết đến nhiều nhất bởi đội bóng đá chuyên nghiệp đang chơi ở Bundesliga, hạng đấu cao nhất của hệ thống giải đấu bóng đá Đức, và là câu lạc bộ thành công nhất trong lịch sử bóng đá Đức, với 31 chức vô địch quốc gia và 20 cúp quốc gia, cùng với vô số danh hiệu châu Âu.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com"><i class="ti-facebook"></i></a>
+					<a href=""><i class="ti-twitter-alt"></i></a>
+					<a href="#"><i class="ti-linkedin"></i></a>
+					<a href="#"><i class="ti-github"></i></a>
+                    <a href="https://www.youtube.com"><i class="ti-youtube"></i></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+<div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
+            <i class="ti-close"></i>
+        </div>
+
+        <header class="modal-header">
+            <i class="modal-header-icon ti-hand-point-right"></i>
+            ĐẶT VÉ
+        </header>
+
+        <div class="modal-body">
+           <label for="tik-quantity" class="modal-label">
+                <i class="ti-shopping-cart"></i>
+                GIÁ VÉ-150.000 VND/người
+            </label>
+            <input id="tik-quantity" type="text" class="modal-input" placeholder="Số lượng">
+
+            <label for="tik-email" class="modal-label">
+                <i class="ti-user"></i>
+                THÔNG TIN
+            </label>
+            <input id="tik-email" type="email" class="modal-input" placeholder="Email....">
+
+            <button id="buy-tickets">
+                MUA <i class="ti-check-box"></i>
+            </button>
+        </div>
+
+        <footer class="modal-footer">
+            <p class="modal-help">Trợ giúp <a href="#">help?</a></p>
+        </footer>
+
+    </div>
+</div>
+
+
+<script>
+    const buyBtns = document.querySelectorAll('.js-buy-ticket')
+    const modal = document.querySelector('.js-modal')
+    const modalcontainer = document.querySelector('.js-modal-container')
+    const modalclose = document.querySelector('.js-modal-close')
+
+
+    // hien thị from//
+    function showBuyTicket() {
+       modal.classList.add('open')
+    }
+    //an modal//
+    function hideBuyTicket() {
+       modal.classList.remove('open')
+    }
+    //nghe click//
+    for(const buyBtn of buyBtns) {
+        buyBtn.addEventListener('click', showBuyTicket)
+    }
+
+    modalclose.addEventListener('click', hideBuyTicket)
+
+    modal.addEventListener('click',hideBuyTicket)
+
+    modalcontainer.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+
+</script>
+<audio autoplay loop>
+    <source src="./asset/nhac/DoToc2-MasewDoMixiPhucDuPhao-7064730.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+    var header = document.getElementById('header');
+    var menumobile = document.getElementById('menu-mobile');
+    var headerH = header.clientHeight;
+//dong mo menu mobile
+    menumobile.onclick = function() {
+        var isClose = header.clientHeight === headerH;
+        if(isClose){
+            header.style.height = 'auto';
+        }else{
+           header.style.height = null;
+        }
+    }
+
+// tu dong dong khi chon menu
+    var menuitems = document.querySelectorAll('#nav li a[href *= "#"]');
+    for(var i=0;i<menuitems.length;i++){
+        var menuitem = menuitems[i]; 
+
+        menuitem.onclick = function() {
+            var ismenu = this.nextElementSibling &&  this.nextElementSibling.classList.contains('subnav');
+            if(!ismenu) {
+            header.style.height = null;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

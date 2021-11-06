@@ -1,0 +1,431 @@
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .tieude-sale h1{
+        font-size: 26px;
+    }
+    #header .header-singin li a{
+        margin-right: 16px;
+    }
+    .sanpham-item-giacu {
+        font-size: 12px;
+    }
+    .sanpham-item-giamoi{
+        font-size: 14px;
+    }
+    .sanpham-item-xuatsu{
+        font-size: 10px;
+    }
+    #header .header-search{
+        flex: 3;
+    }
+    #header .header-item-sin{
+        flex: 3;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .tieude-sale h1{
+        font-size: 18px;
+    }
+    .danhmuc-heading {
+        font-size: 14px;
+    }
+    .danhmuc-list{
+        font-size: 12px !important;
+    }
+
+    .sanpham-item-yeuthich{
+        font-size: 8px;
+    }
+
+    .sanpham-item-giamgia{
+        font-size: 10px !important;
+        width: 50px;
+    }
+    .sanpham-item-giamgia::after{
+        border-width: 0 25px 6px ;
+        bottom: -5px;
+    }
+
+    .sanpham-item-name{
+        font-size: 12px;
+    }
+
+    .sanpham-item-giacu {
+        font-size: 8px;
+    }
+    .sanpham-item-giamoi{
+        font-size: 10px;
+    }
+    .sanpham-item-xuatsu{
+        font-size: 8px;
+    }
+    .header-btn{
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+    #header .header-singin{
+        margin-right: 32px;
+    }
+    #header .header-search{
+        flex: 7;
+    }
+    #header .header-item-sin{
+        flex: 3;
+    }
+
+    #header .header-search-ptn{
+        font-size: 10px;
+    }
+    .footer{
+        border-top: 6px solid rgb(197, 0, 35);
+        font-size: 12px !important;
+    }
+    .thanhtoan img{
+        width: 30px;
+    }
+    #nx{
+        width: 80%;
+    }
+    .footer-logo{
+        width: 100px;
+    }
+    .chat{
+        width: 50px;
+        height: 50px;
+    }
+    .img-chat{
+        font-size: 30px;
+    }
+    .muiten{
+        width: 36px;
+        height: 36px;
+        left: -2px;
+    }
+    .muiten2{
+        width: 36px;
+        height: 36px;
+        right: -2px;
+    }
+
+
+    .muiten-chuyentrang{
+        width: 36px;
+        height: 36px;
+        left: -2px;
+        top: 60%;
+    }
+    .muiten-chuyentrang2{
+        width: 36px;
+        height: 36px;
+        top: 60%;
+        right: -2px;
+    }
+
+    #header .header-singin{
+        display: none;
+    }
+    .media{
+
+        display: block;
+        position: relative;
+    }
+    .media-power{
+        flex: 1;
+        font-size: 18px;
+        color: black;
+        padding: 6px;
+        background-color: rgb(216, 213, 213);
+        border-radius: 30%;
+        box-shadow: 1px 1px 4px rgb(216, 213, 213);
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        right: 16px;
+
+    }
+    .media-power:hover{
+        background-color: rgb(190, 187, 187);
+    }
+    #header .header-search-ptn{
+        height: 20px;
+    }
+    .header-pn-search{
+        font-size: 16px;
+    }
+    .media-supmenu{
+        list-style-type: none;
+        background-color: #fff;
+        box-shadow: 1px 1px 4px #000;
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        top:36px;
+        right: 12px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        display: none;
+    }
+    .open2{
+        display: block !important;
+    }
+    
+    .media-supmenu li a{
+        text-decoration: none;
+        color: #000;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .media-supmenu li{
+        padding: 4px 6px;
+    }
+    .media-supmenu li:hover{
+        background-color: #000;
+    }
+    .media-supmenu li:hover a{
+        color: #fff;
+
+    }
+}
+
+@media only screen  and (max-width: 800px){
+
+  
+   
+    #header .header-singin{
+        display: none;
+    }
+    .media{
+
+        display: block;
+    }
+    .media-power{
+        flex: 1;
+        font-size: 14px;
+        color: black;
+        float: right;margin: 12px;
+        padding: 6px;
+        background-color: rgb(216, 213, 213);
+        border-radius: 30%;
+        box-shadow: 1px 1px 4px rgb(216, 213, 213);
+        cursor: pointer;
+
+    }
+    .open2{
+        display: block !important;
+    }
+    
+    .media-power:hover{
+        background-color: rgb(190, 187, 187);
+    }
+    .media-supmenu{
+        list-style-type: none;
+        background-color: #fff;
+        box-shadow: 1px 1px 4px #000;
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        top:36px;
+        right: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        display: none;
+    }
+    
+    .media-supmenu li a{
+        text-decoration: none;
+        color: #000;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .media-supmenu li{
+        padding: 4px 6px;
+    }
+    .media-supmenu li:hover{
+        background-color: #000;
+    }
+    .media-supmenu li:hover a{
+        color: #fff;
+
+    }
+    .tieude-sale h1{
+        font-size: 10px;
+    }
+    .tieude-sale{
+        height: 40px;
+        top:-20px;
+    }
+    .danhmuc-heading {
+        font-size: 10px;
+    }
+    .danhmuc-list li a{
+        font-size: 10px ;
+    }
+    .ti-angle-double-right, 
+    .ti-angle-double-left{
+        font-size: 12px;
+    }
+    .muiten{
+        width: 26px;
+        height: 26px;
+        left: -5px;
+    }
+    .muiten2{
+        width: 26px;
+        height: 26px;
+        right: -5px;
+    }
+
+
+    .muiten-chuyentrang{
+        width: 26px;
+        height: 26px;
+        left: -5px;
+        top: 60%;
+    }
+    .muiten-chuyentrang2{
+        width: 26px;
+        height: 26px;
+        top: 60%;
+        right: -5px;
+    }
+
+    .muiten:hover, 
+    .muiten2:hover, 
+    .muiten-chuyentrang:hover, 
+    .muiten-chuyentrang2:hover {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sale{
+        height: 380px;
+    }
+    .item-sale{
+        height: 80%;
+    }
+
+    .sanpham-item-yeuthich{
+        font-size: 4px;
+        padding: 1px;
+    }
+
+    .sanpham-item-giamgia{
+        font-size: 4px ;
+        width: 34px;
+    }
+    .sanpham-item-giamgia::after{
+        border-width: 0 17px 4px ;
+        bottom: -4px;
+    }
+    .item-giamgia1, 
+    .item-giamgia2{
+        font-size: 8px;
+    }
+
+    .sanpham-item-name{
+        font-size: 6px;
+        line-height: 8px;
+        font-weight: 100;
+        margin-top: 20px;
+    }
+
+    .sanpham-item-giacu {
+        font-size: 8px;
+    }
+    .sanpham-item-giamoi{
+        font-size: 8px;
+        
+    }
+    .sanpham-item-gia{
+        display: block;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .sanpham-item-danhgia{
+        
+    }
+    span.item-tym, .item-sao{
+        font-size: 8px;
+    }
+    .sanpham-item-xuatsu{
+        font-size: 6px;
+        
+    }
+    .header-btn{
+        font-size: 6px;
+        padding: 4px 8px;
+    }
+    #header .header-singin{
+        margin-right: 32px;
+        justify-content:space-evenly;
+
+    }
+    #header .header-singin li{
+        margin-left: 3px;
+    }
+    #header .header-search{
+        flex: 7;
+    }
+    #header .header-item-sin{
+        flex: 3;
+    }
+    #header .header-shopping, 
+    .header-bell, 
+    .header-help{
+        font-size: 16px;
+    }
+    #header .header-shopping{
+        margin-top: 4px;
+    }
+
+    #header .header-search-ptn{
+        font-size: 6px;
+        margin: 13px 10px;
+        height: 20px;
+    }
+    .header-pn-search{
+        font-size: 14px;
+        right: 4px;
+        top: 16px;
+    }
+    .footer{
+        border-top: 4px solid rgb(197, 0, 35);
+        font-size: 12px !important;
+    }
+    .footer-lienhe a{
+        font-size: 8px;
+    }
+    .thanhtoan img{
+        width: 20px;
+    }
+    #nx{
+        width: 70%;
+        font-size: 10px;
+    }
+    .footer-gioithieu li a{
+        font-size: 10px;
+    }
+    .footer-logo{
+        width: 80px;
+    }
+    .chat{
+        width: 50px;
+        height: 50px;
+    }
+    .img-chat{
+        font-size: 30px;
+    }
+    .container-chuyen h3, 
+    .video-quangcao h3{
+        font-size: 16px;
+    }
+
+}

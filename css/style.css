@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.header-logo{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    cursor: pointer;
+    margin-left: 32px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav span{
+    margin-right: 32px;
+    cursor: pointer;
+}
+.nav span:hover{
+    opacity: 0.9;
+    text-decoration:underline  5px #fff;
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input{
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    outline: #189c8b;
+    
+    
+}
+.search i{
+    position: absolute;
+    top: 22px;
+    right: 6px;
+    cursor: pointer;
+}
+.search i:hover{
+    opacity: 0.8;
+
+}
+.sing-in{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.sing-in span{
+    margin-right: 8px;
+    cursor: pointer;
+}
+.sing-in span:hover{
+    opacity: 0.9;
+}
+.header-img{
+    width: 100%;
+    height:100vh;
+    margin-top: -60px;
+    background-image: url(../asscet/img/pexels-photo-2653362.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-img span{
+    z-index: 10;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 1000;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 60px;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+}
+.header-img .thongtin{
+    margin-top: 32px;
+}
+.header-img button{
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding:12px 16px;
+    margin-left: 32px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header-img button:hover{
+    box-shadow: 0px 1px 9px 0px #fff;
+    opacity: 0.8;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    top: 100vh;
+}
+.main{
+    width: 100%;
+    background-color: #111222;
+}
+.tieude{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+.tieude span{
+    margin-top: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.danhsach{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.item{
+    width: 46%;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 240px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.avt{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/kien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt2{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/hao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt3{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/Han.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt4{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/thien.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt5{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/danh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt6{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/Duong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt7{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/lehuy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt8{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/An.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt9{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/dai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt10{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/thu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt11{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/ava.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.avt12{
+    margin: 8px;
+    width: 50%;
+    height: 400px;
+    background-image: url(../asscet/img/binhan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+.item-thongtin{
+    z-index: 200;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-40px, 120px);
+    box-shadow: 0px 1px 9px 0px #fff;
+
+}
+.item-tt{
+    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 16px;
+    line-height: 40px;
+}
+.danhgia{
+    display: flex;
+    font-size: 16px;
+}
+.ti-star{
+    margin-top: 10px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.item-thongtin button{
+    margin: 32px 16px;
+    background-color: rgb(15, 115, 155);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.item-thongtin button:hover{
+    opacity: 0.8;
+    box-shadow: 0px 1px 9px 0px #fff;
+
+}
+.item-thongtin a{
+    text-decoration: none;
+}
+
+.main-lienhe{
+    margin-top: 60px;
+}
+.lienhe-tieude{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+.content{
+    margin-top: 120px;
+    display: flex;
+}
+.content-info{
+    margin-bottom: 200px;
+    width: 400px;
+    margin-left: 28%;
+}
+.content-info li{
+    list-style: none;
+    font-size: 16px;
+}
+.content-info li a{
+    color: #fff;
+    text-decoration: none;
+}
+.content-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+.content-info li:nth-child(1), .content-info li:nth-child(5){
+    padding-left: 100px;
+}
+.content-info li:nth-child(2), .content-info li:nth-child(4){
+    padding-left: 50px;
+}

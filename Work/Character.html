@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--link xóa padding margin mặc định-->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/Character.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--link font chữ-->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--link Icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--link font chữ-->
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate">
+                            Download Now
+                            <div class="header__qr">
+                                <img src="assets/img/d91264e165ed6facc6178994d5afae79.png" alt="QR code"
+                                    class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="assets/img/ch play.png" alt="Google Play"
+                                            class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="assets/img/app store.png" alt="" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Connection</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Genshin_Impact_logo.svg/2560px-Genshin_Impact_logo.svg.png"
+                            alt="" class="top-logo-img">
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-bell"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="data:image/jpeg;base64,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"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">New Event</span>
+                                                <span class="header__notify-descriotion">Sự kiện mới "Mùa Hè! Hải Đảo?
+                                                    Cuộc Mạo Hiểm!" chuẩn bị ra mắt!
+                                                    Một ngày hè nọ, Klee đột nhiên nhận được một lá thư - "Đại Ma Vương
+                                                    Dodo" bí ẩn muốn cướp Dodoco bên cạnh Klee? Nhà Lữ Hành hãy giúp
+                                                    Klee tìm kiếm chân tướng nhé! </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://upload.motgame.vn/photos/motgame-vn/2021/09/TAKO-cosplay-Raiden-Shogun-Genshin-Impact-2.jpg"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Raiden Shogun </span>
+                                                <span class="header__notify-descriotion">Trước khi Raiden Shogun xuất
+                                                    hiện thì các fan cuồng Genshin Impact đã rất “khổ sở” với hàng tá
+                                                    waifu lẫn husbando trai xinh gái đẹp mà quay mãi không ra
+                                                    rồi...</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20210928/2021092811101777446.jpg"
+                                                alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Hành Trình Đáng Nhớ</span>
+                                                <span class="header__notify-descriotion">
+                                                    Chớp mắt 365 ngày đã trôi qua, bức màn trong rạp hát kỷ niệm của
+                                                    riêng bạn đang từ từ được vén lên...
+                                                    Nhà Lữ Hành có thể xem rạp hát kỷ niệm của riêng mình tại trang sự
+                                                    kiện; Trong thời gian sự kiện...</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-strong header__navbar-item-separate">Đăng ký
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-strong">Đăng nhập</li>
+                    </ul>
+                </nav>
+                <!-- header with search -->
+                <div class="header-with-search">
+                    <div class="header-logo">
+                        <img src="https://64.media.tumblr.com/7a2c8a4e95b83266f60bf8f44e074926/b3b0bbb66adc580b-41/s400x600/a7a9ac70be05e8a22b2385365524b9a9dd76f2f7.gifv"
+                            loop=infinite alt="" class="header-logo-img">
+                    </div>
+                    <div class="header-search">
+                        <input type="text" class="header-search-input" placeholder="Search">
+                        <div class="header-search-select">
+                            <span class="header-search-select-label">
+                                Watched
+                                <i class="header-search-select-icon fas fa-chevron-down"></i>
+
+                                <ul class="header-search-option">
+                                    <li class="header-search-option-item">
+                                        <span>Inazuma</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="header-search-option-item">
+                                        <span>Mondstadt</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                </ul>
+
+                            </span>
+
+                        </div>
+                        <button class="header-search-btn">
+                            <i class="header-search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="header-cart">
+                        <i class="header-cart-icon far fa-star"></i>
+                        <div class=" header-cart-list">
+                            <div class="header-cart-nocart">
+                                <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/paimon-1/sticker_5.png?4719dfd4ead6e5b35d544e7fa0421023&d=200x200"
+                                    alt="" class="header-cart-nocart-img">
+                                <h3 class="header-cart-nocart-text">Bạn Chưa Quan Tâm Nhân Vật Nào</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app-container">
+            <div class="grid">
+                <div class="grid__row app-contai">
+                    <div class="grid-column-2">
+                        <nav class="category">
+                            <h1 class="category-heading">
+                                <i class="category-heading-icon fas fa-list"></i>
+                                Menu
+                            </h1>
+                            <ul class="category-list">
+                                <li class="category-item category-item-link-active">
+                                    <a href="GenshinWiki.html" class=" category-item-link">
+                                        <img src="/assets/img/home_world_35.png" alt="" class="category-icon">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/char_35.png" alt="" class="category-icon">
+                                        Character
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/weapons_35 (1).png" alt="" class="category-icon">
+                                        Weapons
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/gadget_35.png" alt="" class="category-icon">
+                                        Gadget
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/lorebook_35.png" alt="" class="category-icon">
+                                        Books
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/monstor_35.png" alt="" class="category-icon">
+                                        Artifact
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/wish_35.png" alt="" class="category-icon">
+                                        Wish
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/shops_35.png" alt="" class="category-icon">
+                                        Shop
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/hb_10001.png" alt="" class="category-icon">
+                                        Tutorials
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/quest_35.png" alt="" class="category-icon">
+                                        Quests
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/map_35.png" alt="" class="category-icon">
+                                        Map
+                                    </a>
+                                </li>
+                                <li class="category-item category-item-link-active">
+                                    <a href="" class=" category-item-link">
+                                        <img src="/assets/img/dungeon_35.png" alt="" class="category-icon">
+                                        Domains
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid-column-10">
+                        <div class="home-fillter">
+                            <span class="home-fillter-label">Sort</span>
+                            <button class="home-fillter-btn btn">Event</button>
+                            <button class="home-fillter-btn btn btn-new">Date</button>
+                            <button class="home-fillter-btn btn">Hot</button>
+
+                            <div class="select-input">
+                                <span class="select-input-label">Year</span>
+                                <i class="select-input-icon fas fa-chevron-down"></i>
+                                <ul class="select-input-list">
+                                    <li class="select-input-list-item">
+                                        <a href="" class="select-input-link">Summer: 2021</a>
+                                    </li>
+                                    <li class="select-input-list-item">
+                                        <a href="" class="select-input-link">Fall: 2021</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-fillter-page">
+                                <span class="home-fillter-page-num">
+                                    <span class="home-fillter-page-current">1</span> /14
+                                </span>
+
+                                <div class="home-fillter-page-control">
+                                    <a href="" class="home-fillter-page-btn home-fillter-page-btn-dis">
+                                        <i class="home-fillter-page-icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-fillter-page-btn">
+                                        <i class="home-fillter-page-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid-column-2-4">
+                                    <!-- product -->
+                                    <div class="home-product-item">
+                                        <div class="box">
+                                        
+                                            <div class="box-1">
+                                                <div class="box-content">
+                                                    <div class="content">
+                                                        <div class="content-menu">
+                                                            <i class="fas fa-list"></i>
+                                                            <Strong>Contents</Strong>
+                                                        </div>
+                                                        <hr>
+                                                        <li class="content-case"><a href="#1">1.  Playable Characters</a></li>
+                                                        <li class="content-case"><a href="#2">2.  Announced Upcoming Characters</a></li>
+                                                        <li class="content-case"><a href="#3">3.  Non-Playable Characters</a></li>
+                                                        <li class="content-case"><a href="#4">4.  Manga-Only Characters</a></li>
+                                                    </div>
+                                                    <div class="content-img">
+                                                        <img src="assets/img-character/30_Genshin-Guia-de-eventos-web-Slime-Paradise.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <h1 id="1">Playable Characters</h1>
+                                                <hr>
+                                                <div class="box-text">
+                                                    <Strong>41</Strong>
+                                                    <a href="">Characters</a>
+                                                    <span>match the category selection:</span>
+                                                </div>
+                                                <div class="box-1-tabel">
+                                                    <table class="tabel">
+                                                        <tr class="tabel-top ">
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Icon
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Name
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Rarity
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Element
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Weapon
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Sex
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Nation
+                                                            </th>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Albedo_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Albedo</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Zhongli_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Zhongli</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/spear.png" alt=""
+                                                                        width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Aloy_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Aloy</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Ice Word</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Amber_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Amber</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Diona_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Diona</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Ganyu_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Ganyu</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Barbara_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Babara</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/H2O.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Hydro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Beidou_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Beido</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Bennett_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Bennet</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Chongyun_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Chongyun</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Diluc_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Diluc</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Eula_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Eula</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Fischl_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Fischl</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Hu_Tao_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Hutao</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/spear.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Jean_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Jean</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Kaedehara_Kazuha_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Kaedehara Kazuha</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Kaeya_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Kaeya</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Kamisato_Ayaka_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Kamisato Ayaka</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Keqing_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span></span>Keqing</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Klee_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Klee</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Kujou_Sara_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Kujou Sara</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Lisa_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Lisa</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Mona_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Mona</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/H2O.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Hydro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Ningguang_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Ningguang</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Noelle_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Noelle</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Qiqi_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Qiqi</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Raiden_Shogun_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Raiden Shogun</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/spear.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Razor_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Razor</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Rosaria_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Rosaria</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Ice.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Cryo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/spear.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Sangonomiya_Kokomi_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Sangonomiya Kokomi</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/H2O.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Hydro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Sayu_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Sayu</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Sucrose_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Sucrose</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Tartaglia_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Tartaglia</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/H2O.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Hydro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Traveler_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Traveler</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Electro.gif" alt=""
+                                                                        width="30px">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                    <img src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text"></span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Venti_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Venti</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Xiangling_Thumb.png"
+                                                                    alt="" class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span> Xiangling</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/spear.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Xiao_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Xiao</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Wind.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Anemo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/spear.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Xingqiu_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Xingqiu</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/H2O.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Hydro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/de7dych-39724e87-caff-4247-831a-e2a10f2a9f17.png"
+                                                                        alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Sword</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Xinyan_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Xinyan</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/clayymore.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Yanfei_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Yanfei</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Magic.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Liyue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img/Character_Yoimiya_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Yomiya</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img">
+                                                                    <img src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img">
+                                                                    <img src="assets/img-character/Bow.png" alt=""
+                                                                        width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <h1 id="2">Announced Upcoming Characters</h1>
+                                                <hr>
+                                                <div class="box-text">
+                                                    <span>These characters have been announced as 
+                                                    upcoming playable characters by <a href="">miHoYo </a>
+                                                    at some point in time. <Strong>5 Characters</Strong> match 
+                                                    the category selection:</span>
+                                                </div>
+                                                <div class="box-1-tabel">
+                                                    <table class="tabel">
+                                                        <tr class="tabel-top ">
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Icon
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Name
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Rarity
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Element
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Weapon
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Sex
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Nation
+                                                            </th>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Arataki_Itto_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Arataki itto</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/clayymore.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Claymore</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Dainsleif_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Dainsleif</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img-character/Character_Dainsleif_Vision.png" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">God</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/spear.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Khaenri'ah</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Gorou_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Gorou</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Pyro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Geo</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/Bow.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Bow</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Thoma_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Thoma</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_4_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-4star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Fire.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Pyro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/spear.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Polearm</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Yae_Miko_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Yae Miko</span>
+                                                            </td>
+                                                            <td class="tabel-item-rarity">
+                                                                <img src="assets/img/Icon_5_Stars.png" alt=""
+                                                                    class="tabel-item-rarity-img-5star">
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <div class="tabel-item-element-img"><img
+                                                                        src="assets/img/Electro.gif" alt="" width="30px">
+                                                                </div>
+                                                                <span class="tabel-item-element-text">Electro</span>
+                                                            </td>
+                                                            <td class="tabel-item-wepon">
+                                                                <div class="tabel-item-wepon-img"><img
+                                                                        src="assets/img-character/Magic.png"
+                                                                        alt="" width="30px"></div>
+                                                                <span class="tabel-item-wepon-text">Catalyst</span>
+                                                            </td>
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Inazuma</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="Box-1-tabel-note">
+                                                        <div class="text-note">Note</div>
+                                                        <div class="text-note-info">
+                                                            <li class="text-note-info-focus"><a href="">Thorma </a> was announced to be playable on July 9, 2021[1] and August 30, 2021. To be released on November 2, 2021.</li>
+                                                            <li class="text-note-info-focus"><a href="">Arataki Itto </a>was announced to be playable on October 10, 2021. Release TBA.</li>
+                                                            <li class="text-note-info-focus"><a href="">Gorou </a>was announced to be playable on July 9, 2021[1] and October 10, 2021. Release TBA.</li>
+                                                            <li class="text-note-info-focus"><a href="">Dainsleif </a>was announced on September 27, 2020[2]. Release TBA.</li>
+                                                            <li class="text-note-info-focus"><a href="">Yae Miko </a>was announced to be playable on July 9, 2021[1]. Release TBA.</li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h1 id="4">Non-Playable Characters</h1>
+                                                <hr>
+                                                <div class="box-text">
+                                                    <span>For a full list of <a href="">NPCs</a>, see <a href="">Category:NPCs.</a></span>
+                                                    <h3>Mentioned Characters</h3>
+                                                    <span>Notable characters that are mentioned or seen in the game or other official media. They are speculated to become playable characters in the future.</span>
+                                                </div>
+                                                <div class="box-1-tabel">
+                                                    <table class="tabel">
+                                                        <tr class="tabel-top ">
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Icon
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Name
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Element
+                                                            </th>
+                     
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Sex
+                                                            </th>
+                                                            <th class="tabel-top-info">
+                                                                <i class="fas fa-sort"></i>
+                                                                Nation
+                                                            </th>
+                                                  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Barnabas_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Barnabas</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">Unknown</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Sumeru</span>
+                                                            </td>  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Collei_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Collei</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">None</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Sumeru</span>
+                                                            </td>  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Dottore_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Dottore</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">None</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Snezhnaya</span>
+                                                            </td>  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Krupp_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Krupp</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">None</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>	Snezhnaya</span>
+                                                            </td>  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Seamus_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Seamus Pegg</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">None</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Male</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>  
+                                                        </tr>
+                                                        <tr class="tabel-item">
+                                                            <td class="tabel-item-icon">
+                                                                <img src="assets/img-character/Character_Vennessa_Thumb.png" alt=""
+                                                                    class="tabel-item-icon-img">
+                                                            </td>
+                                                            <td class="tabel-item-name">
+                                                                <span>Vennessa</span>
+                                                            </td>
+                                                            <td class="tabel-item-element">
+                                                                <span class="tabel-item-element-text">Unknown</span>
+                                                            </td>                            
+                                                            <td class="tabel-item-sex">
+                                                                <span>Female</span>
+                                                            </td>
+                                                            <td class="tabel-item-nation">
+                                                                <span>Mondstadt</span>
+                                                            </td>  
+                                                        </tr>
+                                                    </table>
+                                                    <div class="Box-1-tabel-note">
+                                                        <div class="text-note">Trivia</div>
+                                                        <div class="text-note-lineinfo">
+                                                            <li class="text-note-lineinfo-focus">
+                                                                Characters say their related voice lines based on the weather and time of day in the open world. (e.g. When It Rains)
+                                                            </li>
+                                                            <li class="text-note-lineinfo-focus">
+                                                                Characters say their "More About" Voice-Overs when their Friendship Level increases.
+                                                            </li>
+                                                            <li class="text-note-lineinfo-focus">
+                                                                Characters are healed to their Max HP after their level is increased or they are ascended. This can occur even when in combat.
+                                                            </li>
+                                                            <li class="text-note-lineinfo-focus">
+                                                                Every other Version Event gave the player a free 4-star character:
+                                                            </li>
+                                                        </div>
+                                                        <div class="text-note-info1">
+                                                            <li class="text-note-info-focus1 "><a href="">Fischl </a> during <a href="">Version 1.1's Unreconciled Stars</a></li>
+                                                            <li class="text-note-info-focus1">One of <a href="">Ningguang, </a><a href=""> Beidou, </a><a href="">Xiangling, </a><a href=""> Xingqiu, </a><a href="">Chongyun, </a>or <a href="">Xinyan </a>during <a href="">Version 1.3's Lantern Rite (Stand By Me)</a></li>
+                                                            <li class="text-note-info-focus1"><a href="">Diona </a>during <a href="">Version 1.5's Energy Amplifier Initiation</a></li>
+                                                            <li class="text-note-info-focus1"><a href="">Beidou </a>During <a href="">Version 2.0's Thunder Sojourn</a></li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="box-end">
+        <div class="text1">
+            <h1>Fandom</h1>
+            <strong>EXPLORE PROPERTIES</strong>
+            <li><a href="#">Fandom</a></li>
+            <li><a href="#">D&D Beyond</a></li>
+            <li><a href="#">Cortex RPG</a></li>
+            <li><a href="#">Muthead</a></li>
+            <li><a href="#">Futhead</a></li>
+            <li><a href="#">Fanatical</a></li>
+            <br>
+            <strong>FOLLOW US</strong>
+            <div class="icon-logo">
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="text2">
+            <strong>OVERVIEW</strong>
+            <li><a href="#">What is Fandom?</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Global Sitemap</a></li>
+            <li><a href="#">Local Sitemap</a></li>
+        </div>
+        <div class="text2">
+            <strong>COMMUNITY</strong>
+            <br>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Community Central?</a></li>
+            <li><a href="#">Support</a></li>
+            <br>
+            <strong>ADVERTISE</strong>
+            <br>
+            <li><a href="#">Media Kit</a></li>
+            <li><a href="#">Fandomatic</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+        <div class="text3">
+            <strong>
+                <h3>FANDOM APPS</h3>
+            </strong>
+            <p>take your favorite fandoms with you and never miss a beat.</p>
+            <div class="logo-menu">
+                <div class="logo-up">
+                    <img src="/assets/img/qTh-vTOx_400x400.jpg" alt="" width="100px">
+                    <img src="/assets/img/Untitled-1.gif" alt="" width="150px">
+                </div>
+                <hr>
+                <div class="logo-up">
+                    <img src="/assets/img/dylan-wheat-ben.jpg" alt="" width="100px">
+                    <img src="/assets/img/Untitled-1.gif" alt="" width="150px">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

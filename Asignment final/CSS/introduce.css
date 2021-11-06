@@ -1,0 +1,614 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .bg {
+    position: relative;
+}
+
+header img {
+    width: 99vw;
+    height: 100vh;
+
+}
+
+header .bg #bg750 {
+    display: none;
+}
+
+header .bg #bg1250 {
+    display: none;
+}
+
+header .bg #button-down {
+    padding-top: 39px;
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 51px;
+    color: #fff;
+    bottom: 4%;
+    left: 48.6%;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    animation: bounce .7s;
+    animation-duration: alternate;
+    animation-timing-function: cubic-bezier(.5, .05, .1, .1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate(0,0);
+    }   
+    to {
+        transform: translate(0,20px);
+    } 
+}
+
+header .bg #button-down:hover {
+    background-color: rgb(143, 3, 3);
+    transition: 0.2s;
+}
+
+/*----------------menu mobile------------------*/
+
+.nav .menu-mobile .nav-input {
+    display: none;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .overlay {
+    display: block;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .nav-menu-mobile {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.nav .menu-mobile  #bars{
+    padding: 3px 12px;
+    padding-top: 7px;
+    font-size: 35px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #383838;
+    position: fixed;
+    z-index: 100;
+    top: 5%;
+    right: 6%;
+    cursor: pointer;
+}
+.nav .menu-mobile .overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+.nav .menu-mobile .nav-menu-mobile {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    transform: translate(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav .menu-mobile .nav-menu-mobile .nav-close {
+    font-size: 2rem;
+    margin-top: 3%;
+    position: absolute;
+    color: #666;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li {
+    list-style: none;
+    padding: 10px;
+    padding-left: 5%;
+
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li:hover {
+    background-color: #6ECB63;
+    transition: 0.35s;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li #home {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a i {
+    color: black;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon {
+    position: fixed;
+    top: 59px;
+    right: 11%;
+    font-size: 1.5rem;
+    background-color: unset;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon:focus ~ .search-input {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input {
+    width: 67%;
+    margin-left: 7.5%;
+    line-height: 35px;
+    border-radius: 5px;
+    padding-left: 4%;
+    padding-right: 13%;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus {
+    border: 2px solid black;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus ~ .history {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history {
+    background-color: rgb(155, 153, 153,0.85);
+    width: 81%;
+    margin-left: 9%;
+    border-radius: 5px;
+    margin-top: 1%;
+    display: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history{
+    min-height: 10vh;  
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history h4{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid white;
+    opacity: 0.7;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul{
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul li {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul a {
+    opacity: 0.7;
+    padding-left: 6%;
+    font-size: 1.5em;
+}
+
+/* hien thi tren may tinh bang */
+@media only screen and (max-width: 1250px) {
+    header .bg img {
+        display: none;
+    }
+
+    header .bg #bg1250 {
+        display: block;
+    }
+
+    main .introduce1 #bgintroduce1{
+        display: none;
+    }
+
+    main .introduce1 #introduce1-1250 {
+        display: block !important;
+    }
+
+    main .introduce1 .ND-introduce1 h3 {
+        font-size: 3.5vw !important;
+    }
+
+    main .introduce1 .ND-introduce1 .doan1 {
+        font-size: 2.6vw !important;
+    }
+    
+    main .introduce2 h2 {
+        top: 16% !important;
+        right: 5%;
+    }
+
+    main .introduce2 .my-skill {
+        right: 23% !important;
+    }
+
+    main .introduce2 .my-skill {
+        right: 10% !important;
+    }
+
+    main .introduce2 .my-skill .skill .thanh-skill {
+        width: 45vw !important;
+
+    }
+}
+
+/* hien thi tren dien thoai */
+@media only screen and (max-width: 750px) {
+    main .content .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .bg #bg1250 {
+        display: none !important;
+    }
+
+    header .bg #bg750 {
+        display: block !important;
+    }
+    
+    main .introduce1 #introduce1-1250 {
+        display: none !important;
+    }
+
+    main .introduce1 #introduce1-750 {
+        display: block !important;
+    }
+
+    main .introduce1 .ND-introduce1 h3 {
+        font-size: 6.5vw !important;
+    }
+
+    main .introduce1 .ND-introduce1 {
+        width: 100% !important;
+    }
+
+    main .introduce1 .ND-introduce1 .doan1 {
+        font-size: 3.7vw !important;
+    }
+
+    main .introduce2 #bgintroduce4 {
+        display: none;
+    }
+    
+    main .introduce2 #introduce4-750 {
+        display: block !important;
+    }
+
+    main .introduce2 h2 {
+        right: 15.5%;
+    }
+
+    main .introduce2 .my-skill {
+        right: 12% !important;
+    }
+
+    main .introduce2 .my-skill .skill .thanh-skill {
+        width: 50vw !important;
+
+    }
+}  
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*-------------------main--------------------*/
+
+main {
+    width: 100%;
+    min-width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+main .introduce1 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+main .introduce1 .bg-xam {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    position: absolute;
+}
+
+main .introduce1 img {
+    width: 100%;
+    height: 100vh;
+}
+
+main .introduce1 #introduce1-750 {
+    display: none;
+}
+
+main .introduce1 #introduce1-1250 {
+    display: none;
+}
+
+main .introduce1 .ND-introduce1 {
+    width: 70%;
+    height: 100vh;
+    z-index: 60;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 50px black;
+}
+
+main .introduce1 .ND-introduce1 h3 {
+    font-size: 2.6vw;
+    position: absolute;
+    top: 32%;
+    color: #FBF4E9;
+}
+
+main .introduce1 .ND-introduce1 .logo {
+    width: 150px;
+    height: 150px;
+    padding: 0.5%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 13%;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+}
+
+main .introduce1 .ND-introduce1 .logo img {
+    width: 150px;
+    height: 150px;
+    right: 10%;
+    position: absolute;
+    right: 7.5%;
+}
+
+main .introduce1 .ND-introduce1 .doan1 {
+    width: 90%;
+    text-align: center;
+    font-size: 2vw;
+    position: absolute;
+    top: 43%;
+}
+
+main .introduce1 .ND-introduce1 #button-down {
+    padding-top: 39px;
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 51px;
+    color: #fff;
+    bottom: 4%;
+    left: 48.6%;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    animation: bounce .7s;
+    animation-duration: alternate;
+    animation-timing-function: cubic-bezier(.5, .05, .1, .1);
+    animation-iteration-count: infinite;
+}
+
+main .introduce1 .ND-introduce1 #button-down:hover {
+    background-color: rgb(143, 3, 3);
+    transition: 0.2s;
+}
+
+main .introduce2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+main .introduce2 img {
+    width: 100%;
+    height: 100vh;
+}
+
+main .introduce2 #introduce4-750 {
+    display: none;
+}
+
+main .introduce2 h2 {
+    position: absolute;
+    font-size: 3em;
+    text-align: center;
+    color: #D4ECDD;
+    top: 44%;
+    left: 41%;
+} 
+
+main .introduce2 .my-skill {
+    position: absolute;
+    right: 14%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+main .introduce2 .my-skill .skill h4 {
+    font-size: 1.2em;
+}
+
+main .introduce2 .my-skill .skill .thanh-skill {
+    background-color: white;
+    width: 30vw;
+    line-height: 26px; 
+    position: relative;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 1%;
+    color: gray;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+main .introduce2 .my-skill .skill .thanh-skill button {
+    width: var(--percent);
+    height: 26px;
+    color: white;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    left: 0;
+
+}
+
+main .introduce2 .my-skill .skill .thanh-skill #skill1 {
+    background-color: rgb(211, 26, 1);
+}
+
+main .introduce2 .my-skill .skill .thanh-skill #skill2 {
+    background-color: rgb(4, 150, 16);
+}
+
+main .introduce2 .my-skill .skill .thanh-skill #skill3 {
+    background-color: rgb(2, 105, 202);
+}
+
+main .introduce2 .my-skill .skill .thanh-skill #skill4 {
+    background-color: #12cccc;
+}
+
+main .introduce2 .my-skill .skill .thanh-skill #skill5 {
+    background-color: rgb(162, 1, 211);
+}
+
+main .introduce2 #button-up {
+    padding-top: 39px;
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    height: 51px;
+    color: #fff;
+    bottom: 1%;
+    left: 48.6%;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    animation: bounce1 .7s;
+    animation-duration: alternate;
+    animation-timing-function: cubic-bezier(.5, .05, .1, .1);
+    animation-iteration-count: infinite;
+}
+
+main .introduce2 #button-up:hover {
+    background-color: rgb(143, 3, 3);
+    transition: 0.2s;
+}
+
+@keyframes bounce1 {
+    from {
+        transform: translate(0,0);
+    }   
+    to {
+        transform: translate(0,-20px);
+    } 
+}
+
+header .bg #button-up:hover {
+    background-color: rgb(143, 3, 3);
+    transition: 0.2s;
+}
+
+/*------------------end main-------------------*/
+

@@ -1,0 +1,111 @@
+.news-page{
+    display: flex;
+    flex-direction: row;
+}
+.news-page .aside2{
+    width: 25%;
+   margin: 2%; 
+}
+.news-page .aside2 .latest-new{
+    background-color: rgb(245, 206, 156);
+    border: 1px rgb(192, 186, 186) solid;
+    color: black;
+}
+.news-page .aside2 .tag{
+    background-color: rgb(245,206,156);
+    padding-bottom: 20px;
+    border: 1px rgb(192, 186, 186) solid;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.news-page .aside2 .tag #title-tag{
+    padding: 10px 10px 15px 30px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 1px rgb(192, 186, 186) dotted;
+}
+.news-page .tintuc{
+    /* background-color: rgb(221, 177, 186); */
+    width: 70%;
+    height: fit-content;
+}
+.news-page .aside2 .latest-new .remain-latest-new{
+    list-style: none;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+.news-page .aside2 .latest-new .remain-latest-new>li:hover{
+    color: rgb(134, 42, 42);
+    border: 1px solid black;
+}
+.news-page .aside2 .latest-new .remain-latest-new>li{
+    padding: 15px 0px 15px 10px;
+    border-top: rgb(192, 186, 186) 1px solid;
+}
+.news-page .aside2 .latest-new #title-latest-new{
+    padding: 10px 10px 5px 30px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+.tag .remain-tag>button{
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 5px 10px;
+    border: none;
+    font-weight: bold;
+}
+.tag .remain-tag>button:hover{
+    background-color: rgb(134, 42, 42);
+    color: white;
+}
+.tag .remain-tag{
+    padding-left: 10px;
+}
+.tintuc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-top:25px
+}
+.tintuc .bangtintuc{
+    width: 30%;
+    border: 1px solid rgb(192, 186, 186);
+    margin: 0px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.tintuc .bangtintuc:hover{
+    box-shadow: 0px 0px 5px 0px gray;
+}
+.tintuc .bangtintuc >img,span,div{
+    padding-bottom: 7px ;
+}
+.tintuc .bangtintuc>span button{
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.tintuc .bangtintuc>span button:hover{
+    background-color: rgb(134, 42, 42);
+    color: white;
+}
+.tintuc .bangtintuc .title-bangtintuc{
+    font-weight: bolder;
+    margin: 0px 5px;
+    text-align: justify;
+    font-size: 20px;
+}
+.tintuc .bangtintuc .remain-bangtintuc{
+    margin: 0px 10px;
+    text-align: justify;
+}
+.tintuc .bangtintuc .date{
+    margin: 0px 20px;
+    font-style: italic;
+}
+
+
+

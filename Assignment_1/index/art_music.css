@@ -1,0 +1,608 @@
+/* main-body */
+.main-body {
+  width: 100%;
+  background-image: linear-gradient(rgb(101, 26, 221), rgb(114, 11, 184));
+  padding-bottom: 80px;
+}
+
+/* search icon */
+.main-body .search1 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0px;
+  padding: 30px;
+}
+
+.main-body .search1 .icon i{
+  position: absolute;
+  margin-top: -6px;
+}
+
+.main-body input {
+  position: relative;
+  background-color: aliceblue;
+  width: 220px;
+  height: 35px;
+  border-radius: 13px;
+  border: 2px solid lightgray;
+  font-size: large;
+}
+
+.main-body input:hover {
+  outline: none;
+  box-shadow: 0px 0px 10px cyan;
+}
+
+.main-body input:focus {
+  outline: none;
+  background-color: whitesmoke;
+}
+
+.search1 .icon i {
+  position: absolute;
+  top: 50%;
+  margin-top: 170px;
+  margin-left: 195px;
+  z-index: 1;
+}
+
+/* art and music categories---------------------------------s---------------------- */
+.art-music {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-left: 33px;
+  background-color:rgb(138, 175, 224);
+  border-radius: 27px;
+  padding-bottom: 20px;
+  
+}
+
+/* Book1--------------------------------------------------------------------------- */
+.book1 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book1 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book1 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book1 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book1 {
+  margin-left: -9px;
+  margin-top: -20px;
+}
+.book1 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book2-------------------------------------------------------------------------- */
+.book2 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book2 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book2 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book2 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book2 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book2 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book3--------------------------------------------------------------------------*/
+.book3 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book3 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book3 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book3 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book3 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book3 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book4--------------------------------------------------------------------------*/
+.book4 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book4 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book4 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book4 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book4 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book4 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book5--------------------------------------------------------------------------*/
+.book5 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book5 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book5 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book5 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book5 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book5 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book6--------------------------------------------------------------------------*/
+.book6 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book6 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book6 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book6 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book6 {
+  margin-top: -20px;
+  margin-left: -9px;
+}
+.book6 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book7--------------------------------------------------------------------------*/
+.book7 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book7 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book7 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book7 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book7 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book7 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book8--------------------------------------------------------------------------*/
+.book8 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book8 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book8 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book8 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book8 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book8 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book9--------------------------------------------------------------------------*/
+.book9 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book9 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book9 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book9 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book9 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book9 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book10--------------------------------------------------------------------------*/
+.book10 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book10 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book10 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book10 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book10 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book10 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book11--------------------------------------------------------------------------*/
+.book11 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book11 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book11 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book11 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book11 {
+  margin-top: -20px;
+  margin-left: -9px;
+}
+.book11 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book12--------------------------------------------------------------------------*/
+.book12 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book12 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book12 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book12 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book12 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book12 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book14--------------------------------------------------------------------------*/
+.book14 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book14 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book14 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book14 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book14 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book14 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book15--------------------------------------------------------------------------*/
+.book15 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book15 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book15 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book15 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book15 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book15 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* Book16--------------------------------------------------------------------------*/
+.book16 figure {
+  width: 202px;
+  height: 279px;
+  margin-top: 40px;
+  padding: 0;
+}
+.book16 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.book16 figure:hover img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.book16 img {
+  border: 1px solid lightgrey;
+  background-image: radial-gradient(lightgrey, whitesmoke);
+  padding: 3px 12px 20px 12px;
+  border-radius: 6px;
+}
+.book16 {
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.book16 .infor-book {
+  margin-left: 40px;
+  width: 15.3%;
+}
+
+/* css for book-------------------------------------------------------------------*/
+.infor-book h5 {
+  font-size: medium;
+  margin-top: -20px;
+  font-weight: 500;
+  width: 120px;
+}
+
+.infor-book h4 {
+  width: 200px;
+  font-weight: 600;
+  font-size: 110%;
+  margin-top: -10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infor-book .old-price {
+  margin-top: -22px;
+  text-decoration: line-through;
+  color: red;
+}
+
+.infor-book p {
+  margin-top: -12px;
+}
+
+.infor-book a {
+  margin-top: 9px;
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  display: inline-flex;
+  justify-content: left;
+  background-color: blueviolet;
+  border-radius: 18px;
+  width: 204px;
+  margin-left: 40px;
+  line-height: 33px;
+}
+
+.add-to-cart img {
+  width: 12%;
+  height: 12%;
+  padding: 0%;
+  border-radius: 50px;
+  margin-left: 28px;
+  margin-top: 4px;
+}
+
+.add-to-cart:hover {
+  background-color: darkviolet;
+}
+
+.add-to-cart a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

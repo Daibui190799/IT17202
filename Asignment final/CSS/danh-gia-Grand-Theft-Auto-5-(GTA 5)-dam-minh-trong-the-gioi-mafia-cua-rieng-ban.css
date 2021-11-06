@@ -1,0 +1,1015 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------------thanh nav và logo-----------------*/
+
+header .nav .logo img {
+    width: 300px;
+    height: 150px;
+    margin-left: 17%;
+    margin-bottom: 1.5%;
+}
+
+header .nav {
+    width: 95%;
+    height: 70px;
+    display: block;
+    display: flex;
+    align-items: center;
+    top: 1%;
+    z-index: 10;
+    background-color: #504f4f;
+    border-radius: 5px;
+    position: relative;
+}
+
+.menu-PC { 
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+
+.menu-PC .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-PC .nav-menu ul li {
+    list-style: none;
+    position: relative;
+}
+
+.menu-PC .nav-menu ul li a {
+    margin-right: 11px;
+    margin-left: 11px;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(234, 240, 247);
+    line-height: 70px;
+    vertical-align: center;
+    text-decoration: none;
+}
+.menu-PC .nav-menu ul li a i {
+    font-size: 35px;
+}
+/*--------------end menu PC cha--------------- */
+
+/*---------------menu con start----------------*/
+
+.menu-PC .nav-menu ul li:hover {
+    background-color: #d6142e;
+    transition: 0.35s;
+}
+
+.menu-PC .nav-menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.menu-PC .nav-menu ul li .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 300px;
+    background-color: rgb(126, 33, 33);
+}
+
+.menu-PC .nav-menu ul li .sub-menu li {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.menu-PC .nav-menu ul li .sub-menu li a {
+    margin: auto;
+    list-style: none;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------end menu con------------------*/
+
+/* --------------- nav search ----------------- */
+
+header nav .search-pc {
+    position: relative;
+    display: flex;
+    right: -2%;
+}
+
+header nav .search-pc .search-input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 15vw;
+    padding-right: 50px;
+    line-height: 37px;
+    padding-left: 12px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid rgb(71, 70, 70);
+}
+
+header nav .search-pc .search-input:focus {
+    border: 2px solid rgb(71, 70, 70);
+}
+
+header nav .search-pc .search-input:focus ~ #search-icon {
+    top: 4px;
+    right: 2px;
+}
+
+header nav .search-pc .search-input:focus ~ .history {
+    display: block;
+}
+
+header nav .search-pc #search-icon {
+    margin: 0;
+    padding: 0;
+    width: 37px;
+    line-height: 33px;
+    border: none;
+    outline: none;
+    border-left: 1px solid rgb(71, 70, 70);
+    cursor: pointer;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+/*----------------end menu-PC------------------*/
+
+/*----------------menu mobile------------------*/
+
+.nav .menu-mobile .nav-input {
+    display: none;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .overlay {
+    display: block;
+}
+
+.nav .menu-mobile .nav-input:checked ~ .nav-menu-mobile {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.nav .menu-mobile  #bars{
+    padding: 3px 12px;
+    padding-top: 7px;
+    font-size: 35px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(77, 76, 76, 0.5);
+    position: fixed;
+    z-index: 5;
+    top: 5%;
+    right: 6%;
+    cursor: pointer;
+    display: none;
+}
+.nav .menu-mobile .overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+.nav .menu-mobile .nav-menu-mobile {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+    transform: translate(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav .menu-mobile .nav-menu-mobile .nav-close {
+    font-size: 2rem;
+    margin-top: 3%;
+    position: absolute;
+    color: #666;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li {
+    list-style: none;
+    padding: 10px;
+    padding-left: 5%;
+
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li:hover {
+    background-color: #6ECB63;
+    transition: 0.35s;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li #home {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .menu-mobile .nav-menu-mobile ul li a i {
+    color: black;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon {
+    position: absolute;
+    top: 59px;
+    right: 11%;
+    font-size: 1.5rem;
+    background-color: unset;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-icon:focus ~ .search-input {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input {
+    width: 67%;
+    margin-left: 7.5%;
+    line-height: 35px;
+    border-radius: 5px;
+    padding-left: 4%;
+    padding-right: 13%;
+    font-size: 1em;
+    border: 1px solid black;
+    outline: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus {
+    border: 2px solid black;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .search-input:focus ~ .history {
+    display: block;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history {
+    background-color: rgb(155, 153, 153,0.85);
+    width: 81%;
+    margin-left: 9%;
+    border-radius: 5px;
+    margin-top: 1%;
+    display: none;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history{
+    min-height: 10vh;  
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history h4{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid white;
+    opacity: 0.7;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul{
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul li {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav .menu-mobile .nav-menu-mobile .search .history .list-history ul a {
+    opacity: 0.7;
+    padding-left: 6%;
+    font-size: 1.5em;
+}
+
+/*----------------- slide-show -----------------*/
+
+header #slider {
+    overflow: hidden;
+    margin: 0 7%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+header #slider figure {
+    height: 100%;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: animate 30s none infinite;
+    border-radius: 5px;
+}
+
+header #slider figure img {
+    width: 20%;
+    height: 80vh;
+    float: left;
+    border-radius: 5px;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+/* hien thi tren may tinh bang */
+@media only screen and (max-width: 1280px) {
+    header .logo {
+        display: none;
+    }
+
+    .nav {
+        background-color: unset !important;
+    }
+
+    .nav .menu-mobile #bars {
+        display: block;
+    }
+    .nav .menu-PC {
+        display: none;
+    }
+
+    .nav .search-pc {
+        display: none !important;
+    }
+
+    header {
+        margin: 0 !important;
+    }
+
+    header .nav {
+        position: absolute;
+    }
+    
+    header #slider {
+        overflow: hidden;
+        margin: 0 !important;
+        margin-top: 0 !important;
+        border-radius: 0px !important;
+    }
+    
+    header #slider figure img {
+        width: 20%;
+        height: 80vh;
+        border-radius: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    
+    
+    .bang-tin {
+        display: none;
+    }
+
+    .border {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .content-footer .face{
+        display: none; 
+    }
+
+    footer .content-footer .logo-footer {
+        display: none;
+    }   
+
+    footer .content-footer  .doan1 {
+        display: flex;
+        flex-direction: column;
+        flex: 1.3;
+    }
+    
+}
+
+/* hien thi tren dien thoai */
+@media only screen and (max-width: 750px) {
+
+    header #slider figure img {
+        height: 40vh;
+    }
+
+    main {
+        width: 95% !important;
+    }
+
+    main .content {
+        width: 100% !important;
+    }
+    
+    main .feedback-bai-viet .fb-comments {
+        display: none;
+    }
+
+    main .feedback-bai-viet #bai-viet-lien-quan {
+        border-bottom: 1px solid gray;
+        padding-bottom: 2%;
+    }
+
+    main .feedback-bai-viet .bai-viet-lq {
+        display: flex;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    
+    main .feedback-bai-viet .bai-viet-lq a {
+        width: 100% !important;
+        display: flex;
+        border-bottom: 1px solid gray;
+        margin-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    main .feedback-bai-viet .bai-viet-lq a:hover img {
+        box-shadow: 1px 1px 30px burlywood;
+        width: 41% !important;
+        
+    }
+    
+    main .feedback-bai-viet .bai-viet-lq img {
+        display: block;
+        width: 40% !important;
+        height: 15vh;
+        margin-right: 2%;
+    }
+    
+    main .feedback-bai-viet .bai-viet-lq span {
+        font-size: 1.4em;
+        width: 50% !important;
+        margin-top: 0.5%;
+    } 
+
+    footer .menu-footer .nav-footer {
+        display: none;
+    }
+}  
+
+/* @media only screen and (max-width: 46.1875em) { 
+    main .content-PC {
+        display: none;
+    }
+    main .content-750 {
+        display: block;
+    }
+} */
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*-------------------main--------------------*/
+
+main {
+    width: 80%;
+    min-width: 90%;
+    min-height: 500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+}
+
+main .content-PC {
+    display: flex;
+    flex-direction: row;
+}
+
+main .content-PC .content {
+    width: 100%;
+    min-width: 60%;
+    min-height: 100%;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-PC .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 2%;
+}
+
+main .content-PC .content hr { 
+    margin-bottom: 2%;
+}
+
+main .content-PC .content img {
+    margin: 1% 0;
+}
+
+main .content-PC .content p {
+    font-size: 1.3em;
+    line-height: 140%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+main .content-PC .content iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2%;
+}
+
+main .content-PC .content ul {
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+main .content-PC .content ul li {
+    font-size: 1.3em;
+    line-height: 140%;
+}
+
+main .content-PC .content h3 { 
+    font-size: 1.6em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+main .content-PC .content h4 {
+    font-size: 1.1em;
+    opacity: 0.7;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+main .content-PC .border {
+    width: 1px;
+    height: 500px;
+    margin-top: 7%;
+    margin-bottom: 100px;
+    margin-left: 12px;
+    border-right: 1px solid red;
+}
+main .content-PC .bang-tin { 
+    max-width: 30%;
+    min-height: 700px;
+    margin: 50px 10px;
+    margin-right: 10px;
+    padding-left: 30px; 
+    
+}
+
+.bang-tin h3 {
+    font-size: 23px;
+    margin-bottom: 13px;
+    color: #DF013A;
+    border-bottom: 3px solid red;
+}
+
+.bang-tin .content-bt span.toprank {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.bang-tin .content-bt ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.bang-tin .content-bt ul li {
+    list-style: none;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.bang-tin .content-bt ul li a {
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+.bang-tin .content-bt ul li span {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+}
+
+/*---------------- feedback ----------------*/
+
+main .feedback-bai-viet {
+    display: flex;
+    flex-direction: column;
+}
+
+main .feedback-bai-viet #feedback {
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 0.5%;
+    padding-top: 2.5%;
+    border-top: 5px solid gray;
+}
+
+div.stars {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0.5%;
+    
+  }
+  div.stars  form{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  input.star { display: none; }
+   
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+    cursor: pointer;
+  }
+   
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #ffc700;  
+    transition: all .25s;
+  }
+   
+  input.star-5:checked ~ label.star:before {
+    color: #FD4;
+  }
+   
+  input.star-1:checked ~ label.star:before { color: #F62; }
+   
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+   
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+main .feedback-bai-viet .fb-like {
+    text-align: center;
+    margin-right: 0.5%;
+    margin-bottom: 4%;
+}
+
+main .feedback-bai-viet .fb-comments {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+main .feedback-bai-viet #bai-viet-lien-quan {
+    font-size: 2.1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+main .feedback-bai-viet .bai-viet-lq {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 4%;
+}
+
+main .feedback-bai-viet .bai-viet-lq a {
+    width: 30%;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+main .feedback-bai-viet .bai-viet-lq a:hover img {
+    box-shadow: 1px 1px 30px burlywood;
+    width: 91%;
+}
+
+main .feedback-bai-viet .bai-viet-lq img {
+    display: block;
+    width: 90%;
+    margin-bottom: 1.5%;
+}
+
+main .feedback-bai-viet .bai-viet-lq span {
+    font-size: 1.4em;
+} 
+/*------------------end main-------------------*/
+
+/* -----------------back to top--------------- */
+
+.container .back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 1.2%;
+    bottom: 5%;
+    font-size: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #92c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    z-index: 5;
+}
+
+.container .back-to-top:hover, .container .back-to-top:focus {
+    background-color: #4B6587;
+    color: snow;
+}
+
+/*------------------footer-------------------- */
+footer {
+    min-width: 100%;
+    min-height: 300px;
+    margin-top: 40px;
+    background-color: #6E6E6E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------------------thanh nav---------------*/
+.menu-footer { 
+    display: flex;
+    position: relative;
+    background-color: black; 
+    min-width: 100%;
+    min-height: 50px;
+}
+
+.menu-footer .nav-footer {
+    margin-left: 10%;
+    line-height: 50px;
+}
+
+.menu-footer .nav-footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-footer .nav-footer ul li {
+    list-style: none;
+    position: relative;
+}
+
+.menu-footer .nav-footer ul li a {
+    line-height: 50px;
+    margin-right: 11px;
+    margin-left: 11px;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: rgb(234, 240, 247);
+    vertical-align: center;
+    text-decoration: none;
+}
+/*--------------end nav footer cha------------- */
+
+/*--------------nav footer con------------------*/
+
+.menu-footer .nav-footer ul li:hover {
+    background-color: #d6142e;
+    transition: 0.35s;
+}
+
+.menu-footer .nav-footer ul li:hover .sub-menu {
+    display: block;
+}
+
+.menu-footer .nav-footer ul li .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 300px;
+    background-color: rgb(126, 33, 33);
+}
+
+.menu-footer .nav-footer ul li .sub-menu li {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.menu-footer .nav-footer ul li .sub-menu li a {
+    margin: auto;
+    list-style: none;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+}
+/*----------------end nav footer--------------- */
+
+/*----------------content footer--------------- */
+
+.content-footer {
+    display: flex;
+}
+
+.content-footer a {
+    flex: 1;
+}
+
+.content-footer a img {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 30px;
+    margin-top: 5%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content-footer .ND {
+    margin-top: 30px;
+    color: #D8D8D8;
+    flex: 1;
+}
+
+.content-footer .ND h3{
+    padding-bottom: 3px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #2E2E2E;
+}
+
+.content-footer .ND ul li {
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+.content-footer .ND ul li a {
+    text-decoration: none;
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.content-footer .ND ul li a i {
+    color: #F8F0DF;
+}
+
+.content-footer .doan1 {
+    line-height: 19px;
+}
+
+.content-footer .doan2 {
+    line-height: 19px;
+}
+
+.content-footer .face {
+    flex: 1.5;
+    margin-top: 30px; 
+    position: relative;
+}
+
+.content-footer .face h3 {
+    padding-bottom: 3px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #2E2E2E;
+}
+
+.content-footer .face img {
+    max-width: 50%;
+    max-height: 73%;
+    position: absolute;
+    
+}
+
+.content-footer .face a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 10px;
+}
+
+.content-footer .face a i {
+    font-size: 40px;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.content-footer .face a span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Copyright {
+    min-height: 35px;
+    line-height: 35px;
+    margin-top: 40px;
+    padding-right: 9%;
+    color: white;
+    text-align: center;
+}
+/*-------------end content footer------------- */

@@ -1,0 +1,67 @@
+.container .menu > li {
+  position: relative;
+  margin: 0px 5px;
+}
+
+.container .menu li:hover .sub-menu {
+  display: block;
+}
+
+.container .menu .menu-bar {
+  line-height: 29px;
+}
+
+.sub-menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 150px;
+  position: absolute;
+  display: none;
+  margin-left: 0px;
+  font-weight: 520;
+}
+
+.sub-menu li a {
+  display: block;
+  line-height: 30px;
+  margin-top: 13px;
+}
+
+.container .menu {
+  list-style: none;
+}
+
+.menu .sub-menu a {
+  font-size: medium;
+  color: black;
+  font-family: 'Segoe UI', Tahoma;
+}
+
+.menu .sub-menu a:hover {
+  font-family: 'Segoe UI', Tahoma;
+  font-size: large;
+  color: antiquewhite;
+  font-weight: 700;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.menu .menu-bar .menu-icon img {
+  background-color: hotpink;
+  border-radius: 9px;
+  width: 38px;
+  height: 35px;
+  padding: 0px;
+  margin-top: -2px;
+  margin-left: -15px;
+}
+
+.container .menu .menu-bar .menu-icon img:hover {
+  background-color: aliceblue;
+}

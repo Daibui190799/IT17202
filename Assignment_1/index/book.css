@@ -1,0 +1,239 @@
+body .container-body{
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  height: 550px;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+article{
+  width: 76%;
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+}
+
+aside{
+  width: 23%;
+  background-color: rgb(0, 238, 238);
+  border-radius: 20px;
+}
+
+.container-body .category{
+  display:inline-flex;
+  width: 100%;
+  line-height: 5px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.container-body aside img{
+  width: 12%;
+  height: 6%;
+  margin-top: 5px;
+}
+
+.container-body aside h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  margin-left: 8px;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.container-body ul{
+ 
+  list-style: none;
+}
+
+.container-body ul li{
+  background-color: rgb(0, 210, 238);
+  margin-right: 33px;
+  padding: 11px 0px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+.container-body ul li a{
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(53, 51, 51);
+  font-size: large;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.container-body ul li:hover{
+  background-color:rgb(0, 153, 255);
+}
+
+/* Information book */
+
+.container-body article{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.container-body article .book-cover{
+  width: 30%;
+}
+
+.container-body article .book-cover img{
+  width: 93%;
+  height:84%;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.container-body article .info-book{
+  width: 70%;
+ 
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+.container-body article .info-book h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-size: xx-large;
+}
+
+.container-body article .info-book p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -18px;
+}
+
+.container-body .format{
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+}
+
+.container-body .format .price-book{
+  display: inline-flex;
+}
+
+.container-body .format .hardcover{
+  width: 27%;
+  line-height: 35%;
+  margin-left: -51px;
+  margin-top: 4px;
+  border: 2px solid rgb(184, 162, 196);
+  border-radius: 8px;
+  padding: 4px 0px 4px 18px;
+}
+.container-body .format .paper-back{
+  width: 27%;
+  line-height: 35%;
+  margin-left: 20px;
+  margin-top: 4px;
+  border: 2px solid rgb(184, 162, 196);
+  border-radius: 8px;
+  padding: 4px 0px 4px 18px;
+}
+
+.format h4{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: rgb(68, 68, 68);
+}
+
+.format p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:smaller;
+}
+
+.format .hardcover:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+.format .paper-back:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+.format .price-book p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  padding-right: 10px;
+}
+
+.check-icon{
+  display:inline-flex
+}
+
+.check-icon img{
+  width: 25px;
+  height: 25px;
+}
+
+.check-icon p{
+  padding-top: 20px;
+  height: 20px;
+  padding-left: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: brown;
+  font-weight: 600;
+}
+
+.add{
+  display: inline-flex;
+  width: 100%;
+}
+
+.add .add-to-cart{
+  display: inline-flex;
+  background-color: rgb(211, 142, 211);
+  width: 31%;
+  height: 43px;
+  border-radius: 30px;
+}
+
+.add .add-to-wishlist{
+  display: inline-flex;
+  margin-left: 25px;
+  background-color: rgb(152, 203, 219);
+  width: 31%;
+  height: 43px;
+  border-radius: 30px;
+}
+
+.add .add-to-cart img{
+  width: 30px;
+  height: 30px;
+  padding-left: 36px;
+  padding-top: 7px;
+}
+
+.add .add-to-wishlist img{
+  width: 30px;
+  height: 30px;
+  padding-left: 19px;
+  padding-top: 7px;
+}
+
+.add p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  padding-top: 29px;
+  padding-left: 7px;
+  color: whitesmoke;
+}
+
+.add .add-to-cart:hover{
+  background-color: rgb(168, 73, 168);
+}
+
+.add .add-to-wishlist:hover{
+  background-color: rgb(64, 154, 182);
+}
+
+
+
+
+
+

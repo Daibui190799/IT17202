@@ -1,0 +1,313 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+}
+#wapper
+{
+    width: 100%;
+   
+}
+.header-wapper
+{
+    width: 100%;
+    height: 155px;
+   
+}
+.header-top
+{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(58, 58, 53);
+    border-bottom: 1px solid rgb(252, 248, 248);
+    position: relative;
+    z-index: 11;
+}
+
+.flex-row
+{
+    width: 100%;
+    display: flex;
+
+
+}
+.icon
+{
+    padding: 18px 5px 15px 15px;
+}
+.icona a 
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.icona
+{
+    margin-top: 17px;
+    margin-left: 20px;
+}
+.icon a
+{
+    text-decoration: none;
+    color: white;
+}
+.text
+{
+   width: 70%;
+   padding-top: 15px;
+   margin-right: 390px;
+   color: white;
+}
+.sing
+{
+   padding: 6px 6px 3px 6px;
+   margin: 8px 20px 15px ;
+   border:1px solid white;
+}
+.sing a
+{
+    text-decoration: none;
+    color: white;
+}
+.header-inder
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 58, 53);
+    display: flex;
+    border: 2px solid black;
+
+}
+.icon1
+{
+    padding: 37px 0px 20px 30px;
+}
+.icon1 a
+{
+    text-decoration: none;
+    color: white;
+}
+.logo
+{
+    color: white;
+    padding-left: 500px;
+    padding-top: 20px;
+    padding-right: 240px;
+  
+}
+.ti-bag
+{
+    position:absolute;
+    right: 20px;
+    top:35px;
+    color: #f00e0e;
+    font-size: 35px;
+}
+.giohang-header
+{
+    position:absolute;
+    right: 70px;
+    top:40px;
+    font-size: 20px;
+    color: #867a7a;
+}
+.search
+{
+    padding: 4px;
+    outline-color: black;
+    border:none;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 0px 0px 0px;
+}
+.kt
+{
+    width: 100%;
+    height: 15px;
+    background: rgb(240, 234, 234);
+}
+.nav
+{
+    height: 660px;
+    width: 100%;
+    background-color: white;
+    
+}
+.aside
+{
+    width: 50%;
+    height: 610px;
+    
+    float: left;
+    position: relative;
+}
+.aside>.giamgia
+{
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid red;
+    padding: 9px 2px 9px 2px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.aside>img
+{
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.article
+{
+    width: 50%;
+    height: 610px;
+    background-color: white;
+    float: right;
+    
+
+}
+.trangchu>a
+{
+    text-decoration: none;
+    margin-top: 60px;
+}
+.trangchu
+{
+    margin-top: 60px;
+}
+.gia
+{
+    padding: 10px;
+}
+.thongtin-group
+{
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.thongtin-group>.thongtin
+{
+    padding-bottom: 8px;
+}
+.giohang>.a
+{
+    text-decoration: none;
+    background-color: #f00e0e;   
+    padding: 10px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.giohang
+{
+    margin-top: 15px;
+}
+.baohanh
+{
+    background-color: #b98c8c;
+    margin-right: 60px;
+    padding: 20px 0px 20px 0px;
+
+}
+.baohanh>ul>li
+{
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.footer
+{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(58, 58, 53);
+    clear: both;
+    border-top: 1px solid white;
+}
+.ti-ink-pen{
+    border: 1px double white;
+    border-radius: 20px;
+    padding: 7px 7px 7px 7px;
+    color: white;
+    background-color: rgb(124, 94, 94);
+    margin-right: 15px;
+    margin-left: -15px;
+}
+.ti-mobile{
+    border: 1px double white;
+    border-radius: 20px;
+    padding: 7px 7px 7px 7px;
+    color: white;
+    background-color: rgb(124, 94, 94);
+    margin-right: 15px;
+    margin-left: -15px;
+}
+.ti-email{
+    border: 1px double white;
+    border-radius: 10px;
+    padding: 7px 7px 7px 7px;
+    color: white;
+    background-color: rgb(124, 94, 94);
+    margin-right: 15px;
+    margin-left: -15px;
+}
+.stl{
+    margin-top: 28px;
+    margin-left: 50px;
+    color: white;
+}
+.stl img{
+    font-size: 40px;
+}
+.tt{
+    width: 30%;
+    height: 90%;
+    margin-left: 50px;
+    margin-top: 15px;
+    color: white;
+}
+.dk{
+    width: 30%;
+    height: 90%;
+    margin-left: 120px;
+    margin-right: 30px;
+    margin-top: 15px;
+    color: white;
+}
+.footer h4:hover{
+    color: chocolate;
+}
+.footer h4{
+    color: rgb(241, 252, 252);
+}
+.search1{
+    margin-right: 16px;
+    padding: 8px 18px;
+    outline-color: #000;
+    border: none;
+    background:  #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.b{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    margin-left: -15px;
+    border-radius: 5px;
+}
+.pc
+{
+    width: 62.9%;
+    height: 40px;
+    padding-left: 500px;
+    padding-top: 15px;
+    background-color: black;
+    color: #f5f5f5;
+}
