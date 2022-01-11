@@ -1,0 +1,45 @@
+.process, .factory, .aboutus{
+    font-family: "Open Sans",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ .title-children-page{
+    font-size: 5em;
+    font-weight: bold;
+    margin-top: 10%;
+   font-family: 'Corinthia', cursive;
+    font-family: 'Luxurious Script', cursive;
+    
+}
+.content-children-page{
+    text-align: justify;
+    padding: 3% 18% 3% 18%;
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+.content-children-page >p{
+    padding-bottom: 2%;
+}
+.process .pic{
+    width: 70%;
+    margin-bottom: 5%;
+}
+.process .pic img{
+    width: 100%;
+    height: auto;
+
+}
+
+/*list factory */
+.factory .content-children-page .list-factory{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
+.factory .content-children-page .list-factory >li {
+    width: 48%;
+    padding: 0% 1% 1% 0%;
+    font-style: italic;
+}

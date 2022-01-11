@@ -1,0 +1,79 @@
+@media only screen and (min-width: 1024px) {
+}
+
+/*Tablet: width >=740px and < 102px */
+@media only screen and (min-width: 46.24em) and (max-width: 63.9375em) {
+    /*header*/
+    .header-btn{
+        margin-left: -80px  ;
+    }
+    /*bg*/
+    .main-content__wrapper .wrapper-slides{
+        padding-top: 80%;
+        height: 0;
+        min-height: 0;
+    }
+    /*American*/
+    /*our story*/
+    .nd-3-text{
+        margin: 10px 100px;
+    }
+    /*family*/
+    .main-family-content{
+        padding: 60px;
+    }
+    .main-family-img{
+        background-position: center;
+    }
+    /*swatch*/
+    .main-swatch{
+        height: auto;
+        margin-bottom: 0;
+    }
+    .hight-swatch{
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 30px;
+    }
+    .content-swatch{
+        width: calc(100% - 60px);
+        flex-direction: column;
+        padding: 0;
+        padding-left: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .line-top{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        height: 3px;
+        width: 80%;
+    }
+    .line-right {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        height: 100%;
+        width: 3px;
+    }
+    .line-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        height: 3px;
+        width: 80%;
+    }
+    .line-left {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        height: 100%;
+        width: 3px;
+    }
+    .content-swatch-img{
+        margin-top: -40px;
+        margin-left: 0;
+    }
+}

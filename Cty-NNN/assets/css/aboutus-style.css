@@ -1,0 +1,70 @@
+.aboutus {
+
+}
+
+#frame-pic-aboutus{
+    margin-left: 60px;
+    width: 30%;
+    height: 320px;
+    background-image: url(../img/aboutnnn2.jpg);
+    border-radius: 10px;
+}
+.content1-aboutus{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus .content1-aboutus{
+    /* background-color: pink; */
+    position: relative;
+    
+}
+.aboutus .content1-aboutus .content{
+    width: 60%;
+    margin-right: 60px;
+}
+.aboutus .content1-aboutus  span{
+    font-family: "Open Sans",sans-serif;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutus .content2-aboutus{
+    position: relative;
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.content2{
+    width: 60%;
+    margin-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.aboutus .content2-aboutus p{
+    font-family: "Open Sans",sans-serif;
+    text-align: justify;
+    font-size: 1.2em;
+    /* margin: 3%; */
+}
+.aboutus .content2-aboutus ul{
+    font-family: "Open Sans",sans-serif;
+    text-align: justify;
+    font-size: 1.2em;
+    /* margin: 3%; */
+    margin-left: 120px;
+}
+.aboutus .content2-aboutus  img{
+    width: 30%;
+    height: 640px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+.aboutus .content2-aboutus .last-p{
+   
+}
+
